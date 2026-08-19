@@ -1,0 +1,266 @@
+{
+  "model": "XGBoost (gbtree)",
+  "params": {
+    "objective": "binary:logistic",
+    "base_score": null,
+    "booster": null,
+    "colsample_bylevel": null,
+    "colsample_bynode": null,
+    "colsample_bytree": 0.7,
+    "device": null,
+    "eval_metric": "auc",
+    "gamma": null,
+    "grow_policy": null,
+    "interaction_constraints": null,
+    "learning_rate": 0.04,
+    "max_bin": null,
+    "max_cat_threshold": null,
+    "max_cat_to_onehot": null,
+    "max_delta_step": null,
+    "max_depth": 4,
+    "max_leaves": null,
+    "min_child_weight": 8,
+    "monotone_constraints": null,
+    "multi_strategy": null,
+    "n_jobs": -1,
+    "num_parallel_tree": null,
+    "random_state": null,
+    "reg_alpha": 0.2,
+    "reg_lambda": 1.5,
+    "sampling_method": null,
+    "scale_pos_weight": null,
+    "subsample": 0.8,
+    "tree_method": "hist",
+    "validate_parameters": null,
+    "verbosity": null
+  },
+  "best_iteration": 1,
+  "config": {
+    "train_period": [
+      "2025-09-26 19:45",
+      "2026-03-05 15:45"
+    ],
+    "val_period": [
+      "2026-03-05 16:00",
+      "2026-04-01 14:00"
+    ],
+    "test_period": [
+      "2026-04-01 14:15",
+      "2026-05-15 19:45"
+    ],
+    "n_features": 45
+  },
+  "test_metrics": {
+    "auc_1d": 0.4602,
+    "base_rate": 0.6232,
+    "mean_pred": 0.525,
+    "median_pred": 0.513,
+    "frac_pred_above_05": 1.0,
+    "calibration_bias": -0.0982
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.35,
+      "total_return_pct": 12.8,
+      "ann_return_pct": 176.84,
+      "sharpe": 12.948,
+      "avg_exposure": 0.973
+    },
+    {
+      "threshold": 0.375,
+      "total_return_pct": 12.8,
+      "ann_return_pct": 176.84,
+      "sharpe": 12.948,
+      "avg_exposure": 0.973
+    },
+    {
+      "threshold": 0.4,
+      "total_return_pct": 12.8,
+      "ann_return_pct": 176.84,
+      "sharpe": 12.948,
+      "avg_exposure": 0.973
+    },
+    {
+      "threshold": 0.425,
+      "total_return_pct": 12.8,
+      "ann_return_pct": 176.84,
+      "sharpe": 12.948,
+      "avg_exposure": 0.973
+    },
+    {
+      "threshold": 0.45,
+      "total_return_pct": 12.8,
+      "ann_return_pct": 176.84,
+      "sharpe": 12.948,
+      "avg_exposure": 0.973
+    },
+    {
+      "threshold": 0.475,
+      "total_return_pct": 12.8,
+      "ann_return_pct": 176.84,
+      "sharpe": 12.948,
+      "avg_exposure": 0.973
+    },
+    {
+      "threshold": 0.5,
+      "total_return_pct": 12.8,
+      "ann_return_pct": 176.84,
+      "sharpe": 12.948,
+      "avg_exposure": 0.973
+    },
+    {
+      "threshold": 0.525,
+      "total_return_pct": 5.92,
+      "ann_return_pct": 62.66,
+      "sharpe": 5.822,
+      "avg_exposure": 0.403
+    },
+    {
+      "threshold": 0.55,
+      "total_return_pct": 3.74,
+      "ann_return_pct": 36.45,
+      "sharpe": 3.867,
+      "avg_exposure": 0.134
+    },
+    {
+      "threshold": 0.575,
+      "total_return_pct": 0.0,
+      "ann_return_pct": 0.0,
+      "sharpe": 0,
+      "avg_exposure": 0.0
+    },
+    {
+      "threshold": 0.6,
+      "total_return_pct": 0.0,
+      "ann_return_pct": 0.0,
+      "sharpe": 0,
+      "avg_exposure": 0.0
+    },
+    {
+      "threshold": 0.625,
+      "total_return_pct": 0.0,
+      "ann_return_pct": 0.0,
+      "sharpe": 0,
+      "avg_exposure": 0.0
+    },
+    {
+      "threshold": 0.65,
+      "total_return_pct": 0.0,
+      "ann_return_pct": 0.0,
+      "sharpe": 0,
+      "avg_exposure": 0.0
+    }
+  ],
+  "best_threshold": {
+    "threshold": 0.35,
+    "total_return_pct": 12.8,
+    "sharpe": 12.948,
+    "avg_exposure": 0.973
+  },
+  "buy_hold_test_period": {
+    "total_return_pct": 12.84,
+    "sharpe": 12.944
+  },
+  "top_20_features_by_gain": [
+    {
+      "feature": "vx_level",
+      "gain": 57.0,
+      "pct": 4.52
+    },
+    {
+      "feature": "macro_treasury_2y",
+      "gain": 46.1,
+      "pct": 3.66
+    },
+    {
+      "feature": "vx4",
+      "gain": 45.4,
+      "pct": 3.6
+    },
+    {
+      "feature": "ma_1d",
+      "gain": 43.7,
+      "pct": 3.46
+    },
+    {
+      "feature": "macro_dollar_twi_broad",
+      "gain": 42.1,
+      "pct": 3.34
+    },
+    {
+      "feature": "vx8",
+      "gain": 41.7,
+      "pct": 3.31
+    },
+    {
+      "feature": "ma_1w",
+      "gain": 39.0,
+      "pct": 3.1
+    },
+    {
+      "feature": "realized_vol_1d",
+      "gain": 38.2,
+      "pct": 3.03
+    },
+    {
+      "feature": "return_1m",
+      "gain": 37.5,
+      "pct": 2.98
+    },
+    {
+      "feature": "macro_credit_hy_oas",
+      "gain": 37.4,
+      "pct": 2.97
+    },
+    {
+      "feature": "vx5",
+      "gain": 37.0,
+      "pct": 2.94
+    },
+    {
+      "feature": "return_1w",
+      "gain": 36.7,
+      "pct": 2.91
+    },
+    {
+      "feature": "vix",
+      "gain": 36.1,
+      "pct": 2.86
+    },
+    {
+      "feature": "vx1",
+      "gain": 36.1,
+      "pct": 2.86
+    },
+    {
+      "feature": "macro_spread_10y_2y",
+      "gain": 35.6,
+      "pct": 2.83
+    },
+    {
+      "feature": "macro_spread_10y_3m",
+      "gain": 34.2,
+      "pct": 2.71
+    },
+    {
+      "feature": "ma_1m",
+      "gain": 32.1,
+      "pct": 2.55
+    },
+    {
+      "feature": "vx_contango_ratio",
+      "gain": 31.9,
+      "pct": 2.53
+    },
+    {
+      "feature": "days_to_month_end",
+      "gain": 31.8,
+      "pct": 2.52
+    },
+    {
+      "feature": "rsi_14",
+      "gain": 31.2,
+      "pct": 2.47
+    }
+  ]
+}

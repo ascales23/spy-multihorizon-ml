@@ -1,0 +1,67 @@
+{
+  "config": {
+    "symbol": "SPY",
+    "horizon": 5,
+    "train_min": 250,
+    "retrain_freq": 21,
+    "seeds": 5,
+    "threshold": 0.5,
+    "cost_bps": 1.0,
+    "out_root": "/home/ascales/ml_pipeline/runs"
+  },
+  "period": {
+    "start": "2025-06-23",
+    "end": "2026-05-15"
+  },
+  "metrics": {
+    "NN": {
+      "name": "NN",
+      "total_return_pct": 15.12,
+      "ann_return_pct": 18.31,
+      "ann_vol_pct": 11.86,
+      "sharpe": 1.544,
+      "sortino": 1.922,
+      "max_dd_pct": -9.12,
+      "calmar": 2.007,
+      "hit_rate_pct": 38.86,
+      "profit_factor": 1.336,
+      "n_days": 211,
+      "trade_stats": {
+        "n_trades": 12,
+        "avg_trade_days": 18.8,
+        "win_rate_pct": 75.0,
+        "avg_win_pct": 1.74,
+        "avg_loss_pct": -1.086,
+        "best_trade_pct": 4.984,
+        "worst_trade_pct": -1.851
+      },
+      "avg_exposure": 0.697
+    },
+    "Buy&Hold": {
+      "name": "Buy&Hold",
+      "total_return_pct": 24.37,
+      "ann_return_pct": 29.75,
+      "ann_vol_pct": 12.74,
+      "sharpe": 2.335,
+      "sortino": 3.321,
+      "max_dd_pct": -9.13,
+      "calmar": 3.258,
+      "hit_rate_pct": 56.4,
+      "profit_factor": 1.424,
+      "n_days": 211
+    },
+    "VolTarget15": {
+      "name": "VolTarget15",
+      "total_return_pct": 21.89,
+      "ann_return_pct": 26.67,
+      "ann_vol_pct": 16.66,
+      "sharpe": 1.601,
+      "sortino": 1.969,
+      "max_dd_pct": -11.04,
+      "calmar": 2.417,
+      "hit_rate_pct": 56.4,
+      "profit_factor": 1.298,
+      "n_days": 211
+    }
+  }
+}
